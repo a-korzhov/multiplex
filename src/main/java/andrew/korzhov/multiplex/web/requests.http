@@ -1,0 +1,32 @@
+### The system lists movies available in the given time interval - title and screening times
+
+GET http://localhost:8080/api/1.0/screenings?max=2020-03-28T18%3A30%3A00.703Z&min=2020-03-28T12%3A30%3A00.703Z
+Accept: application/json
+
+### The system gives information regarding screening room and available seats
+
+GET http://localhost:8080/api/1.0/screenings/4?row=7
+Accept: application/json
+
+### The system gives back the total amount to pay and reservation expiration time
+
+POST http://localhost:8080/api/1.0/reservation
+Content-Type: application/json
+
+{
+  "firstName": "Andrew",
+  "lastName": "Korzhov",
+  "row": 2,
+  "tickets": [
+    {
+      "seat": 5,
+      "ticketType": "ADULT"
+    }
+  ],
+  "screeningId": 3
+}
+
+### Update screening day
+PUT http://localhost:8080/api/1.0/screenings/update-day/28
+
+###
