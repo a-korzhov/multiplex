@@ -1,5 +1,16 @@
-# Technologies:
-Java 11, Postgres 12.2, Spring Boot 2.2.5, Swagger 2.0.
+# Test project. Multiplex system to book tickets in cinema.
+
+## Functionality:
+- The system lists movies available in the given time interval - title and screening times
+- The system gives information regarding screening room and available seats
+- The system gives back the total amount to pay and reservation expiration time
+- There cannot be a single place left over in a row between two already reserved places
+
+## Technologies with versions:
+- Java 11
+- Postgres 12.2
+- Spring Boot 2.2.5 
+- Swagger 2.0
 
 ## Start application:
 - ``` ./runscript.sh DB_NAME DB_USER DB_PASSWORD ```
